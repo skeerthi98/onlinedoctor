@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+background-image: url("bg7.jpg");
+}
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.li {
+    float: left;
+}
+
+.li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+background-color:#4CAF50;
+}
+</style>
+</head>
+<body>
+<table border=0>
+<tr ><td><img src="online.jpg"></td>
+<td><a href="http://localhost:8083/doctor/Servlets1">logout</td>
+</table>
+<br>
+<ul class="ul">
+  <li class="li"><a class="active" href="http://localhost:8083/doctor/Servletm">Symptoms</a></li>
+  <li class="li"><a href="http://localhost:8083/doctor/Servleth">Healthtips</a></li>
+  <li class="li"><a href="http://localhost:8083/doctor/Servletp1">Psychology</a></li>
+  <li class="li"><a href="#contact">Contact</a></li>
+  <li class="li"><a href="#about">About</a></li>
+</ul>
+<form method="get" align="center" action="http://localhost:8083/doctor/Servletf">
+<table width=500>
+<td colspan=2><h1><Acute sinusitis</h1></td>
+<tr ><td colspan=2>
+Acute sinusitis is an inflammation of the sinuses caused by infection lasting less than 4 weeks. 
+Sinusitis often develops when swelling,inflammation, and mucus from a cold block nasal passages.
+This makes it easier for bacteria to grow.<br>
+<h1>Treatment</h1>
+Treatments for acute sinusitis may include:  
+<ul>
+<li>Flushing nasal passages with warm salt water (Neti pot) or saline nasal spray</li>
+<li>Warm packs</li> 
+<li>Antibiotics for bacterial infections</li> 
+<li>Cortisone and other nasal sprays for inflammation and allergy control</li> 
+<li>Sinus drainage procedures</li>
+<li>Oral antihistamines and/or decongestants</li>
+
+
+	</ul>
+<br><input type="checkbox" name="msg" value="t">Remainder to take medicines<br><br>
+	
+	<input type="submit">
+	</form>
+</td></tr>
+</table>	
+</body>
+</html> 

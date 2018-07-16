@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h1><center>ONLINE  DOCTER</center><h1><br>
+<CENTER style="font-size:25px;">RESET PASSWORD</center>
+<style>
+div 
+{	
+	
+	width:400px;
+	font-size:25px;
+	text-align: left;	
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+</style>
+<script>
+function validate()
+{
+	var x=document.getElementById("t1").value;
+	var y=/^[a-z|A-Z]{3,20}\@[a-z|A-Z]{3,20}\.[a-z|A-Z]{3}/;
+	if(x.match(y))
+	{
+		alert("email is valid");
+	}
+	else
+	{
+		alert("email is not valid");	
+	}
+}
+</script>
+</head>
+<body background="bg7.jpg">
+<form action="" method="get">
+<center><div>username:<input type="text" id="t1"><br>
+enter password:<input type="password" name="pwd"><br>
+confirm password:<input type="password" name="pwd"><br>
+<button name="login" onclick="validate()">login</button> <button name="cancel" onclick="">cancel</button>
+</div></center>
+</form>
+</body>
+</html>

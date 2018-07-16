@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+<style>
+
+body{
+background-image: url("bg7.jpg");
+}
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.li {
+    float: left;
+}
+
+.li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+background-color:#4CAF50;
+}
+</style>
+</head>
+<body>
+<table border=0>
+<tr ><td><img src="online.jpg"></td>
+<td><a href="http://localhost:8083/doctor/Servlets1">logout</td>
+</table>
+<br>
+
+<ul class="ul">
+  <li class="li"><a href="http://localhost:8083/doctor/Servletm">Symptoms</a></li>
+  <li class="li"><a href="http://localhost:8083/doctor/Servleth">Healthtips</a></li>
+  <li class="li"><a class="active" href="http://localhost:8083/doctor/Servletp1">Psychology</a></li>
+  <li class="li"><a href="#contact">Contact</a></li>
+  <li class="li"><a href="#about">About</a></li>
+</ul> 
+
+
+<form method="get" action="http://localhost:8083/doctor/Servletp">
+<h1><b><center >Fun Personality Test </b></h1>
+<b> 1.when do you feel your best?</b>
+<ul style="list-style-type:none">
+<li><input type="radio" name="1" value="2"><i>a.in the morning</i></li>
+<li><input type="radio" name="1" value="4"><i>b.during the afternoon and early morning</i></li>
+<li><input type="radio" name="1" value="6"><i>c.late at night </i></li></ul>
+<br>
+<p><b> 2.you usually walk </b></p>
+<ul style="list-style-type:none">
+<li><input type="radio" name="2" value="6"><i>a. fairly fast,with long steps</i></li>
+<li><input type="radio" name="2" value="4"><i>b. fairly fast,with short,quick steps</i></li>
+<li><input type="radio" name="2" value="7"><i>c. less fast head up,lookig the world in the face</i></li>
+<li><input type="radio" name="2" value="2"><i>d.less fast,head down</i></li>
+<li><input type="radio" name="2" value="1"><i>e. very slow </i></li>
+</ul>
+<br>
+<p><b> 3.when talking to people you </b></p>
+<ul style="list-style-type:none">
+<li><input type="radio" name="3" value="4"><i>a. stand with your arms folded </i></li>
+<li><input type="radio" name="3" value="2"><i>b. have your hands clasped </i></li>
+<li><input type="radio" name="3" value="5"><i>c. have one or both your hands on your hips</i></li>
+<li><input type="radio" name="3" value="7"><i>d. touch or push the person to whom you are talking</i></li>
+<li><input type="radio" name="3" value="6"><i>e. play with your ear,touch your chin,or smooth your hair </i></li>
+</ul>
+<br>
+<p><b> 4.when relaxing,you sit with </b></p>
+<ul style="list-style-type:none">
+<li><input type="radio" name="4" value="4"><i>a.your knees bent with your legs neatly side by side </i></li>
+<li><input type="radio" name="4" value="6"><i>b.your legs crossed </i></li>
+<li><input type="radio" name="4" value="2"><i>c.your legs stretched out and straiht </i></li>
+<li><input type="radio" name="4" value="1"><i>d.one leg curled under you </i></li>
+</ul>
+<br>
+<p><b> 5.when something really amuses you, you react with </b></p>
+<ul style="list-style-type:none">
+<li><input type="radio" name="5" value="6"><i>a.a big,appreciative laugh</i></li>
+<li><input type="radio" name="5" value="4"><i>b.a laugh but not a loud one </i></li>
+<li><input type="radio" name="5" value="3"><i>c.a quite chuckle </i></li>
+<li><input type="radio" name="5" value="5"><i>d.a sheepish smile </i></li>
+</ul>
+<br>
+<p><b> 6.when you go to a party or social gathering you....</b></p>
+<ul style="list-style-type:none">
+<li><input type="radio" name="6" value="6"><i>a.make a loud entrance so every one notices you </i></li>
+<li><input type="radio" name="6" value="4"><i>b.make a quiet entrance so everyone notices you </i></li>
+<li><input type="radio" name="6" value="2"><i>c.make the quietest wntrance,trying to stay unnoticed </i></li>
+</ul>
+<br>
+<p><b> 7.you're working very hard and you're interrupted </b></p>
+<ul style="list-style-type:none">
+<li><input type="radio" name="7" value="6"><i>a.welcome the break </i></li>
+<li><input type="radio" name="7" value="2"><i>b.feel extremely irritated </i></li>
+<li><input type="radio" name="7" value="4"><i>c.vary between these two extemes </i></li>
+</ul>
+<br>
+<p><b> 8.which of the following colors do you like the most </b></p>
+<ul style="list-style-type:none">
+<li><input type="radio" name="8" value="6"><i>a.red or orange </i></li>
+<li><input type="radio" name="8" value="7"><i>b.black </i></li>
+<li><input type="radio" name="8" value="5"><i>c.yellow or light blue </i></li>
+<li><input type="radio" name="8" value="4"><i>d.green </i></li>
+<li><input type="radio" name="8" value="3"><i>e.dark blue or purple </i></li>
+<li><input type="radio" name="8" value="2"><i>f.white </i></li>
+<li><input type="radio" name="8" value="1"><i>g.brown or gray </i></li>
+</ul>
+<br>
+<p><b> 9.in those last few moments before going to sleep, </b></p>
+<ul style="list-style-type:none">
+<li><input type="radio" name="9" value="7"><i>a.stretched out on your back </i></li>
+<li><input type="radio" name="9" value="6"><i>b.stretched out face down on your stomach </i></li>
+<li><input type="radio" name="9" value="4"><i>c.on your side,slightly curled</i></li>
+<li><input type="radio" name="9" value="2"><i>d.with your head on one arm </i></li>
+<li><input type="radio" name="9" value="1"><i>e.with your head under the covers</i></li>
+</ul>
+<br>
+<p><b> 10.you often dream that you are... </b></p>
+<ul style="list-style-type:none">
+<li><input type="radio" name="10" value="4"><i>a. falling </i></li>
+<li><input type="radio" name="10" value="2"><i>b. fighting or struggling </i></li>
+<li><input type="radio" name="10" value="3"><i>c. searching for something or somebody </i></li>
+<li><input type="radio" name="10" value="5"><i>d. flying or floating </i></li>
+<li><input type="radio" name="10" value="6"><i>e. you usually have dreamless sleep </i></li>
+<li><input type="radio" name="10" value="1"><i>f. your dreams are always pleasant </i></li></ul>
+<br>
+
+<br>
+<input type="submit">
+</form>
+</body>
+</head>
+</html> 

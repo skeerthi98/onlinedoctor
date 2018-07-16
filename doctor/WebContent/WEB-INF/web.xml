@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>doctor</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>welcome.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+   <servlet-name>Register</servlet-name>
+   <servlet-class>Register</servlet-class>
+</servlet>
+<servlet>
+   <servlet-name>Servletr1</servlet-name>
+   <servlet-class>Servletr1</servlet-class>
+</servlet>
+<servlet>
+   <servlet-name>Servlets1</servlet-name>
+   <servlet-class>Servlets1</servlet-class>
+</servlet>
+<servlet>
+   <servlet-name>Servletd1</servlet-name>
+   <servlet-class>Servletd1</servlet-class>
+</servlet>
+<servlet>
+   <servlet-name>Servletp</servlet-name>
+   <servlet-class>Servletp</servlet-class>
+</servlet>
+<servlet>
+   <servlet-name>Servleth</servlet-name>
+   <servlet-class>Servleth</servlet-class>
+</servlet>
+<servlet>
+   <servlet-name>Servletp1</servlet-name>
+   <servlet-class>Servletp1</servlet-class>
+</servlet>
+<servlet>
+   <servlet-name>sinus</servlet-name>
+   <servlet-class>sinus</servlet-class>
+</servlet>
+<servlet>
+   <servlet-name>sunburn</servlet-name>
+   <servlet-class>sunburn</servlet-class>
+</servlet>
+<servlet>
+   <servlet-name>Servletd</servlet-name>
+   <servlet-class>Servletd</servlet-class>
+</servlet>
+
+
+<servlet>
+   		<servlet-name>Displaycount</servlet-name>
+   		<servlet-class>Displaycount</servlet-class>
+</servlet>
+<filter>
+		<filter-name>Displayfiltercount</filter-name>
+		<filter-class>Displayfiltercount</filter-class>
+</filter>
+<servlet-mapping>
+   <servlet-name>Servlets1</servlet-name>
+   <url-pattern>/Servlets1</url-pattern>
+</servlet-mapping>
+<servlet>
+   <servlet-name>Servletm</servlet-name>
+   <servlet-class>Servletm</servlet-class>
+</servlet>
+<servlet>
+   <servlet-name>Servletf</servlet-name>
+   <servlet-class>Servletf</servlet-class>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>Servletf</servlet-name>
+   <url-pattern>/Servletf</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+   <servlet-name>Servletm</servlet-name>
+   <url-pattern>/Servletm</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+   		<servlet-name>Displaycount</servlet-name>
+   		<url-pattern>/Displaycount</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+   <servlet-name>Register</servlet-name>
+   <url-pattern>/Register</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+   <servlet-name>Servletr1</servlet-name>
+   <url-pattern>/Servletr1</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+   <servlet-name>Servletd1</servlet-name>
+   <url-pattern>/Servletd1</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+   <servlet-name>Servletp</servlet-name>
+   <url-pattern>/Servletp</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+   <servlet-name>Servleth</servlet-name>
+   <url-pattern>/Servleth</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+   <servlet-name>Servletp1</servlet-name>
+   <url-pattern>/Servletp1</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+   <servlet-name>sinus</servlet-name>
+   <url-pattern>/sinus</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+   <servlet-name>sunburn</servlet-name>
+   <url-pattern>/sunburn</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+   <servlet-name>Servletd</servlet-name>
+   <url-pattern>/Servletd</url-pattern>
+</servlet-mapping>
+
+<filter-mapping>
+		<filter-name>Displayfiltercount</filter-name>
+		<url-pattern>*.html</url-pattern>
+</filter-mapping>
+</web-app>

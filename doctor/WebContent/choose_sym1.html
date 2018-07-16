@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+background-image: url("bg7.jpg");
+}
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.li {
+    float: left;
+}
+
+.li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+background-color:#4CAF50;
+}
+</style>
+</head>
+<body>
+<table border=0>
+<tr ><td><img src="online.jpg"></td>
+<td><a href="http://localhost:8083/doctor/Servlets1">logout</td>
+</table>
+<br>
+<ul class="ul">
+  <li class="li"><a class="active" href="http://localhost:8083/doctor/Servletm">Symptoms</a></li>
+  <li class="li"><a href="http://localhost:8083/doctor/Servleth">Healthtips</a></li>
+  <li class="li"><a href="http://localhost:8083/doctor/Servletp1">Psychology</a></li>
+  <li class="li"><a href="#contact">Contact</a></li>
+  <li class="li"><a href="#about">About</a></li>
+</ul>
+<form method="get" align="center" action="http://localhost:8083/doctor/Servletd1">
+<table width=500>
+<th><td colspan=2><h1 > choose symptom </h1></td></th>
+<tr ><td colspan=2>
+
+	<ul style="list-style-type:none" style="color:red;">
+        	<li><INPUT TYPE="CHECKBOX" VALUE="cold" NAME="d">cold</li>
+		<li><INPUT TYPE="CHECKBOX" VALUE="cough" NAME="d">cough</li>
+		<li><INPUT TYPE="CHECKBOX" VALUE="fever" NAME="d">fever</a></li>
+		<li><INPUT TYPE="CHECKBOX" VALUE="headache" NAME="d">headache</li>
+		<li><INPUT TYPE="CHECKBOX" VALUE="bodypain" NAME="d">bodypain</li>
+		<li><INPUT TYPE="CHECKBOX" VALUE="vomiting" NAME="d">vomiting</li>
+		<li><INPUT TYPE="CHECKBOX" VALUE="weakness" NAME="d">weakness</li>
+	</ul>
+	
+	<input type="submit">
+	</form>
+</td></tr>
+</table>	
+</body>
+</html>
+
+
+
+   
+                            	
+                                   
+                              

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+background-image: url("bg7.jpg");
+ background-size:cover;
+}
+</style>
+<script>
+	function empty()
+	{
+		var n=document.getElementsByName("UNAME")[0].value;
+		var a=document.getElementsByName("age")[0].value;
+		if(n=="")
+			alert("enter the username");
+		else if(a=="")
+			alert("enter the age");
+		
+	}
+	function validate(event)
+	{
+	
+		
+		var p=document.getElementsByName("PWD")[0].value;
+		var p1=/^([a-z|A-Z|0-9]{7,20}[@|_|#])/;
+		var e=document.getElementsByName("email")[0].value;
+		var e1=/^([a-z|A-Z]{1,40}[_]?[0-9]{0,6}?)\@[a-z]{1,5}\.[a-z]{1,3}$/;
+		if(p.match(p1))
+		{
+			document.getElementById("demo1").innerHTML="valid";
+			alert("==========");
+			if(!(e.match(e1)))
+			{
+				alert("==11111111111========");
+
+				return true;
+			}
+		}
+		else
+		{
+			var c=document.getElementById("demo1")
+			c.innerHTML="invalid characters";
+			c.style.color = "red";
+			if(!(e.match(e1)))
+			{
+				alert("=====22222222222222=====");
+
+			document.getElementById("demo").innerHTML="invalid";
+			}
+			return false;
+		}
+		
+		
+		
+		
+		
+		      		
+				
+		
+	}
+	
+	
+
+</script>
+		
+		
+</head>
+<body align="center">
+	<br>
+	<b>REGISTRATION FORM</b>
+	<br>
+	<table cellspacing="15" align="CENTER" frame="box">
+	
+	<form ALIGN="CENTER" method="post" action="Register">
+	
+	<tr>
+	<td><br>USERNAME <span style="color:red;">*</span></td>
+		<td><br><INPUT TYPE="TEXT" name="UNAME" onblur="empty()"></td>
+	</tr>
+	<tr>
+  	<td>PASSWORD <span style="color:red;">*</span></td>
+		<td><INPUT TYPE="PASSWORD" name="PWD"></td>
+	</tr><br>
+	<tr>
+			<td></td>
+			<td><pre id="demo1" style="color:green;">
+password should contain 
+atleast 8 characters 
+1 spcl character and digits </pre>
+			</td>
+	</tr>
+	<tr>
+	<td>GENDER <span style="color:red;">*</span></td>
+		<td><INPUT TYPE="RADIO" NAME="GENDER" VALUE="M" checked>Male
+		<INPUT TYPE="RADIO" NAME="GENDER" VALUE="F">Female</td>
+	</tr>
+	<tr>
+	<td>AGE <span style="color:red;">*</span></td>
+		<td><INPUT TYPE="text" name="age" onblur="empty()"></td>
+	</tr>
+	<tr>
+	
+	<td>BLOODGROUP <span style="color:red;">*</span></td>
+	<td><SELECT name="bg">
+		<OPTION VALUE="A+">A+</OPTION>
+		<OPTION VALUE="B+">B+</OPTION>
+		<OPTION VALUE="A-" >A-</OPTION>
+		<OPTION VALUE="B-" >B-</OPTION>
+		<OPTION VALUE="AB+" >AB+</OPTION>
+		<OPTION VALUE="AB-" >AB-</OPTION>
+		<OPTION VALUE="O-" >O-</OPTION>
+		<OPTION VALUE="O+" >O+</OPTION>
+	</SELECT></td>
+	</tr>
+	<tr>
+	<td>EMAIL <span style="color:red;">*</span></td>
+		<td><INPUT TYPE="TEXT" name="email"></td><br>
+	</tr>
+	<tr>
+		<td></td>
+			<td><p id="demo" style="color:red;"> </p></td>
+	</tr>
+	<tr>
+	<td>ADDRESS:</td>
+		<td><textarea name="message" rows="5" cols="30"></textarea></td>
+	</tr>
+	<tr>
+	<td>CONTACT:</td>
+		<td><INPUT TYPE="TEXT" name="con"></td>
+	</tr>
+	
+		
+		<tr>
+			<td><input type="submit" value="Submit" onSubmit="return validate(this);"></td>
+		</tr>
+	
+	</form>
+	</table>
+</body>
+</html>
